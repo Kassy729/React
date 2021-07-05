@@ -9,7 +9,7 @@ module.exports={
     },
     
     entry:{
-        app:['./client'],  //client.jsx가 WorldRelay.jsx를 불러오므로 추가 안해도 된다, ReackDom도 같이
+        app:['./client'],  //client.jsx가 WordRelay.jsx를 불러오므로 추가 안해도 된다, ReackDom도 같이
     }, //입력
 
     module:{

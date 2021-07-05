@@ -1,56 +1,10 @@
 <html>
     <head>
-        <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-        <!--리액트를 불러온다-->
-
-        <body>
-            <div id="root"></div>
-            <div id="admin"></div> 
-            
-            
-            <script type="text/babel">
-                // const e = React.createElement;
-
-                class LikeButton extends React.Component{
-                    constructor(props){
-                        super(props);
-                        this.state = {
-                            like: false,
-                        };
-                    }
-
-                    render(){
-                        return <button type="submit" onClick={() => { this.setState({ liked: true })}}>
-                            {this.state.liked === true ? 'Liked' : 'Like'}
-                            </button>;
-                    //     e('button', {onClick: () => { this.setState({ liked:true })}, type:'submit'}, 
-                    //     this.state.liked === true ? 'Liked' : 'Like',);  //<button>Like</button> 를 만들겠다.
-                     }
-                }
-
-                class HiButton extends React.Component{
-                    constructor(props){
-                        super(props);
-                        this.state = {
-                            hi : false,
-                        };
-                    }
-
-                    render(){
-                        return <button type="submit" onClick={() => { this.setState({ no: true})}}>
-                            {this.state.no === true ? 'NO' : 'HI'}
-                            </button>
-                    }
-                }
-            </script>
-
-
-            <script type="text/babel">
-                ReactDOM.render(<div><LikeButton /><LikeButton /><LikeButton /><LikeButton /></div>, document.querySelector('#root'));
-                ReactDOM.render(<div><HiButton /><HiButton /><HiButton /><HiButton /></div>, document.querySelector('#admin'));
-            </script>
-        </body>
+        <meta charset="utf-8"/>
+        <title>구구단</title>
     </head>
+    <body>
+        <div id="root"></div>
+        <script src="./dist/app.js"></script>  
+    </body>
 </html>
